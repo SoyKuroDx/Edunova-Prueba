@@ -19,6 +19,9 @@ import {
   Globe
 } from 'lucide-react';
 
+import footerImg from './assets/footer.png';
+import logoImg from './assets/logo.png';
+
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTopBarVisible, setIsTopBarVisible] = useState(true);
@@ -182,7 +185,7 @@ function App() {
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center">
               <img
-                src="/img/logo.png"
+                src={logoImg}
                 alt="EDUNOVA Logo"
                 className="w-48 h-12 object-contain"
               />
@@ -428,7 +431,7 @@ function App() {
             <div>
               <div className="flex items-center">
                 <img
-                  src="/img/footer.png"
+                  src={footerImg}
                   alt="EDUNOVA Footer"
                   className="w-48 h-12 object-contain"
                 />
